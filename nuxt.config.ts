@@ -27,12 +27,15 @@ export default defineNuxtConfig({
   },
 
   app: {
+    // baseURL is set by GitHub Pages preset, but can be overridden via NUXT_APP_BASE_URL env var
+    // @ts-expect-error - process.env is available at build time in Node.js context
+    baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
-      title: "Nazwa aplikacji",
+      title: "nearMate",
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Aneta Lets Go Application' }
+        { name: 'description', content: 'nearMate Application' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
