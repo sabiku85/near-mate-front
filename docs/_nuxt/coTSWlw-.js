@@ -1,0 +1,1 @@
+import{b0 as s,p as r,v as e}from"./BemcYl0A.js";const i=s((t,u)=>{const{isAuthenticated:a}=r();if(!a.value&&t.path.startsWith("/dashboard"))return e("/auth/login");if(a.value&&t.path.startsWith("/auth"))return e("/dashboard")});export{i as default};
