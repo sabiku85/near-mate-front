@@ -1,4 +1,4 @@
-# Aneta Lets Go - Frontend Application
+# nearMate - Frontend Application
 
 A modern frontend application built with Nuxt 4, featuring authentication flows and a comprehensive dashboard.
 
@@ -90,6 +90,6 @@ The project uses:
 
 ## Notes
 
-- API endpoints are currently mocked and need to be connected to your backend
+- API endpoints are currently mocked and need to be connected to backend
 - Authentication state is managed via composables and cookies
 - All dashboard routes are protected by authentication middleware
